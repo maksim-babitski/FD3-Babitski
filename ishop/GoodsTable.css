@@ -1,0 +1,52 @@
+.GoodsTable
+{
+  border: solid rgb(129, 129, 129) 5px;
+  border-collapse: collapse;
+  background-color: rgb(218, 226, 226);
+  text-align: center;
+}
+
+.GoodsTable > .TableName
+{
+  font-weight: bold;
+  font-size: large;
+  color: rgb(8, 104, 104);
+}
+
+.GoodsTable .ColomnName
+{
+  color: rgb(62, 62, 145);
+  border: solid rgb(129, 129, 129) 3px;
+  padding: 15px;
+}
+
+.GoodsTable .Equipment
+{
+  border: solid rgb(129, 129, 129) 1px;
+  padding: 5px;
+}
+
+.GoodsTable .Equipment > .EquipPict
+{
+  background-color: rgb(19, 1, 49);
+  width: 40px;
+  height: 40px;
+}
+
+.GoodsTable .Equipment > .EquipText
+{
+  color: rgb(19, 1, 49);
+  display: block;
+}
+
+.GoodsTable .Prise
+{
+  color: rgb(18, 104, 110);
+  border: solid rgb(129, 129, 129) 1px;
+}
+
+.GoodsTable .Quantity
+{
+  color: rgb(18, 104, 110);
+  border: solid rgb(129, 129, 129) 1px;
+}

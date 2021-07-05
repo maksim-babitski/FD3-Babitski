@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <title>Голосование</title>
+</head> 
+<body> 
+  <div id = "container"></div> 
+      
+  <script src = "https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src = "https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+      
+  <script src = "GoodsTable.js"></script>
+  <link rel = "stylesheet" type="text/css" href="GoodsTable.css" />
+
+  <script>
+
+    var shopName = 'Moto Equip';
+    var colomnNameArr = ['Equipment', 'Prise', 'Quantity'];
+
+    var colomnNameArr = [ 
+      {name:'Equipment', code: 11}, 
+      {name:'Prise', code: 12}, 
+      {name:'Quantity', code: 13} 
+    ];
+
+
+    var goodsList = [ 
+      {equipText:'Helmets', equipPictUrl:'images/helmets.svg', prise:'250$', quantity: 15, code: 1}, 
+      {equipText:'Jackets', equipPictUrl:'images/jackets.svg', prise:'150$', quantity: 10, code: 2}, 
+      {equipText:'Pants', equipPictUrl:'images/pants.svg', prise:'120$', quantity: 18, code: 3},
+      {equipText:'Boots', equipPictUrl:'images/boots.svg', prise:'200$', quantity: 12, code: 4} 
+    ];
+
+    ReactDOM.render(
+      React.createElement(GoodsTable, {tableName:shopName, goods:goodsList, colomnName:colomnNameArr}), 
+      document.getElementById('container') 
+    );
+
+  </script>
+
+</body> 
+</html>
