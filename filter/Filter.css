@@ -1,0 +1,24 @@
+.Filter
+{
+  color: black;
+}
+
+.Filter .stringList
+{
+  width: 250px;
+}
+
+.Filter > .filterControl
+{
+  margin-bottom: 10px;
+}
+
+.Filter > .filterControl > .checkBox
+{
+  margin-right: 5px;
+}
+
+.Filter > .filterControl > .textInput 
+{
+  margin-right: 5px;
+}
