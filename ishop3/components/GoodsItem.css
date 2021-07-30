@@ -1,0 +1,36 @@
+.GoodsItem > .Equipment
+{
+  border: solid rgb(129, 129, 129) 1px;
+  padding: 5px;
+}
+
+.GoodsItem > .Equipment > .EquipPict
+{
+  background-color: rgb(19, 1, 49);
+  width: 40px;
+  height: 40px;
+}
+
+.GoodsItem > .Equipment > .EquipName
+{
+  color: rgb(19, 1, 49);
+  display: block;
+}
+
+.GoodsItem > .Prise
+{
+  color: rgb(18, 104, 110);
+  border: solid rgb(129, 129, 129) 1px;
+}
+
+.GoodsItem > .Quantity
+{
+  color: rgb(18, 104, 110);
+  border: solid rgb(129, 129, 129) 1px;
+}
+
+.GoodsItem > .Control
+{
+  color: rgb(18, 104, 110);
+  border: solid rgb(129, 129, 129) 1px;
+}

@@ -1,0 +1,16 @@
+.CardEdit > .label
+{
+    display: block;
+}
+
+.CardEdit > .label > .inputName
+{
+    display: inline-block;
+    width: 70px;
+}
+
+.CardEdit > .label > .error
+{
+    color: red;
+    padding-left: 15px;
+}

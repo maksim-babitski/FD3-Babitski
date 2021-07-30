@@ -1,0 +1,6 @@
+[ 
+    {"equipName":"Helmets", "equipPictUrl":"../images/helmets.svg", "prise":"250$", "quantity": 15, "code": 1}, 
+    {"equipName":"Jackets", "equipPictUrl":"../images/jackets.svg", "prise":"150$", "quantity": 10, "code": 2}, 
+    {"equipName":"Pants", "equipPictUrl":"../images/pants.svg", "prise":"120$", "quantity": 18, "code": 3},
+    {"equipName":"Boots", "equipPictUrl":"../images/boots.svg", "prise":"200$", "quantity": 12, "code": 4} 
+]
