@@ -1,7 +1,7 @@
 {
   "name": "ishop3",
   "version": "1.0.0",
-  "description": "магазин товаров",
+  "description": "moto shop",
   "main": "App.js",
   "scripts": {
     "build": ".\\node_modules\\.bin\\webpack",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
   }
 }

@@ -87,17 +87,6 @@ class CardEdit extends React.Component {
         });    
     }
 
-    componentDidUpdate(prevProps) { //обновляем state при получении новых props
-        if (this.props.item !== prevProps.item) {
-            if (!this.props.addMode) {
-                this.setState( {equipName:this.props.item.equipName} );
-                this.setState( {equipPictUrl:this.props.item.equipPictUrl} );
-                this.setState( {prise:this.props.item.prise} );
-                this.setState( {quantity:this.props.item.quantity} );
-            }      
-        }
-    }
-
     render() {
 
         return (
@@ -133,6 +122,16 @@ class CardEdit extends React.Component {
             </div>
         )
     }
+
+    componentDidUpdate = (oldProps, oldState) => { //обновляем state при получении новых props  
+        if ( oldProps.item!==this.props.item ) {
+            if (!this.props.addMode) {
+                this.setState( {equipName:this.props.item.equipName, equipPictUrl:this.props.item.equipPictUrl,
+                    prise:this.props.item.prise, quantity:this.props.item.quantity} 
+                );
+            }  
+        }
+    };
 }
 
 export default CardEdit;
