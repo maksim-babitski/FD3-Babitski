@@ -24,7 +24,8 @@ class GoodsItem extends React.Component {
     this.props.cbSelected(this.props.code);
   }
 
-  deleteGoodsItem = () => {
+  deleteGoodsItem = (EO) => {
+    EO.stopPropagation();
     this.props.cbDeleted(this.props.code);
   }
 

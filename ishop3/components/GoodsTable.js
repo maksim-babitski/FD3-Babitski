@@ -41,6 +41,7 @@ class GoodsTable extends React.Component {
     mode: 0, // 0-nothing, 1-view, 2-edit
     addMode: false, // false-edit item, true-add new item
     isEditing: false, //true-is edited, but isn't saved; false-isn't edited or is edited and saved
+    key: this.props.goods.length, //key for new item
 
   }
 
@@ -49,14 +50,10 @@ class GoodsTable extends React.Component {
   }
 
   goodsItemDeleted = (code) => {
-    this.setState( {selectedGoodsItemCode:code}, this.deleteItem);
-  }
-
-  deleteItem = () => {
     var isconfirmed = this.props.confirmFunc();
     if (isconfirmed) {
-        var filteredGoodsList = this.state.goodsList.filter(item => item.code !== this.state.selectedGoodsItemCode);
-        this.setState({goodsList: filteredGoodsList, mode: 0});
+        var filteredGoodsList = this.state.goodsList.filter(item => item.code !== code);
+        this.setState({goodsList: filteredGoodsList, mode: 0, selectedGoodsItemCode:null});
     }
   }
 
@@ -80,7 +77,7 @@ class GoodsTable extends React.Component {
   }
 
   addItem = () => {
-    this.setState({mode: 2, addMode: true});
+    this.setState({mode: 2, addMode: true, key: ++this.state.key});
   }
 
   editingNow = () => {
@@ -106,7 +103,7 @@ class GoodsTable extends React.Component {
 
     var item = this.state.goodsList.find((item) => item.code == this.state.selectedGoodsItemCode); //выбранный элемент
     
-    var addedItem = {code: (this.state.goodsList.length + 1), equipName: '', equipPictUrl: '', prise: '', quantity: ''}; //новый (добавляемый) элемент
+    var addedItem = {code: this.state.key, equipName: '', equipPictUrl: '', prise: '', quantity: ''}; //новый (добавляемый) элемент
     
     return (
       <div>
