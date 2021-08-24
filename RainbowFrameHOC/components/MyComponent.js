@@ -4,11 +4,12 @@ import DoubleButton from './DoubleButton'
 import { withRainbowFrame } from './withRainbowFrame'
 import './MyComponent.css';
 
+let colors = ['red','blue', 'green','orange', 'yellow'];
+
+let FramedDoubleButton = withRainbowFrame(colors)(DoubleButton);
+
 class MyComponent extends React.Component {
     render () {
-        let colors = ['red','blue', 'green','orange', 'yellow'];
-
-        let FramedDoubleButton = withRainbowFrame(colors)(DoubleButton);
 
         return (
             <div className='MyComponent'>
