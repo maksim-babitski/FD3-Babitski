@@ -1,0 +1,37 @@
+.MobileCompany
+{
+    padding-top: 10px;
+    width: 800px;
+}
+
+.MobileCompany th {
+    border-bottom: 1px solid #95a1ad;
+    border-top: 1px solid #95a1ad;
+    padding: 12px 0px;
+}
+
+.MobileCompany input[type='button']
+{
+    padding: 5px 8px;
+}
+
+.MobileCompany > .FilterBlock
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px 0px;
+    border-top: 1px solid #95a1ad;
+    border-bottom: 1px solid #b3b7bb;
+}
+
+.MobileCompany > .ClientsTable
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.MobileCompany > .ClientsTable .header
+{
+    font-weight: bold;
+}

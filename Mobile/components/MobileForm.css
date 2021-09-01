@@ -1,0 +1,10 @@
+.MobileForm > .label
+{
+    display: block;
+}
+
+.MobileForm > .label > .inputName
+{
+    display: inline-block;
+    width: 75px;
+}
