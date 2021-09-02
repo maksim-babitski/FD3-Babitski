@@ -131,7 +131,7 @@ class MobileCompany extends React.PureComponent {
                 <input type="button" value="Velcom" onClick={this.setName2} />
                 <div>Компания &laquo;{this.state.name}&raquo;</div>
                 <div className="FilterBlock">
-                    <input type="button" value="Все" onClick={this.filterAll}/>
+                    <input className='All' type="button" value="Все" onClick={this.filterAll}/>
                     <input type="button" value="Активные" onClick={this.filterActive}/>
                     <input type="button" value="Заблокированные" onClick={this.filterBlocked}/>
                 </div>
